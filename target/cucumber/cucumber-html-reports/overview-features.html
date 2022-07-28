@@ -50,11 +50,11 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                4,
+                8,
                 0,
-                2,
                 0,
-                1
+                0,
+                0
             ],
             backgroundColor: [
                 "#00B000",
@@ -93,7 +93,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 7) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 8) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -106,8 +106,8 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                0,
-                1
+                1,
+                0
             ],
             backgroundColor: [
                 "#00B000",
@@ -153,8 +153,8 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                   0,
-                   1
+                   1,
+                   0
                ],
                backgroundColor: [
                 "#00B000",
@@ -228,7 +228,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>No Name (add projectName to cucumber-reporting.properties)</td>
-      <td>28 Tem 2022, 16:48</td>
+      <td>28 Tem 2022, 18:07</td>
     </tr>
   </tbody>
 </table>
@@ -325,52 +325,52 @@ $(document).ready(function() {
       <tr>
         <td class="tagname"><a href="report-feature_4196646110.html">Register Functionality</a></td>
 
-        <td      class="passed"    >4</td>
+        <td      class="passed"    >8</td>
         <td >0</td>
-        <td     class="skipped"   >2</td>
         <td >0</td>
-        <td   class="undefined" >1</td>
-        <td class="total">7</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">8</td>
 
+        <td  class="passed"    >1</td>
         <td >0</td>
-        <td  class="failed"    >1</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="4815700">0.004</td>
-        <td class="fa&#305;led">Fa&#305;led</td>
+        <td class="duration" data-value="9869324300">9.869</td>
+        <td class="passed">Passed</td>
       </tr>
   </tbody>
 
   <tfoot class="total">
     <tr>
       <td></td>
-      <td>4</td>
+      <td>8</td>
       <td>0</td>
-      <td>2</td>
       <td>0</td>
-      <td>1</td>
-      <td>7</td>
+      <td>0</td>
+      <td>0</td>
+      <td>8</td>
 
+      <td>1</td>
       <td>0</td>
       <td>1</td>
-      <td>1</td>
 
-      <td class="duration">0.004</td>
+      <td class="duration">9.869</td>
       <td>1</td>
     </tr>
     <tr>
       <td></td>
-      <td>57.14%</td>
-      <td>0.00%</td>
-      <td>28.57%</td>
-      <td>0.00%</td>
-      <td>14.29%</td>
-      <td></td>
-      <td>0.00%</td>
       <td>100.00%</td>
-      <td></td>
-      <td></td>
       <td>0.00%</td>
+      <td>0.00%</td>
+      <td>0.00%</td>
+      <td>0.00%</td>
+      <td></td>
+      <td>100.00%</td>
+      <td>0.00%</td>
+      <td></td>
+      <td></td>
+      <td>100.00%</td>
     </tr>
   </tfoot>
 </table>

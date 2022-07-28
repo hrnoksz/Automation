@@ -1,13 +1,17 @@
 Feature: Register Functionality
+
   @wip
   Scenario: User is on the homepage
-  Given User navigate to homepage
-  Then Verify that homepage is visible successfully
-  When User clicks on signup button
-  Then Verify New User Signup is visible
-  When user enter name and email address
-  And user clicks on new signup button
-  Then Verify that enter account information is visible
+    Given User navigate to homepage
+    Then Verify that homepage is visible successfully
+    When User clicks on signup button
+    Then Verify New User Signup is visible
+    When user enter name and email address
+    And user clicks on new signup button
+    Then Verify that enter account information is visible
+    And fill details following information
+
+
 
 
 
