@@ -82,6 +82,7 @@ public class RegisterStepDefinitions {
         day.selectByVisibleText("5");
         //day.selectByIndex(5);
         //day.selectByValue("5");
+
         Select month  = new Select(page.months);
         month.selectByVisibleText("October");
         Select year = new Select(page.years);
