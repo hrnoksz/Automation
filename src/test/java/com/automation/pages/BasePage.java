@@ -17,4 +17,16 @@ public class BasePage {
 
     @FindBy(xpath = "//h2[.='New User Signup!']")
     public WebElement messageOne;
+
+    @FindBy(xpath = "//input[@data-qa='signup-name']")
+    public WebElement name;
+
+    @FindBy(xpath = "//input[@data-qa='signup-email']")
+    public WebElement emailAddress;
+
+    @FindBy(xpath = "//button[@data-qa='signup-button']")
+    public WebElement newSignBtn;
+
+
+
 }
