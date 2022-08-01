@@ -50,4 +50,53 @@ public class BasePage {
     @FindBy(xpath = "//select[@id = 'years']")
     public WebElement years;
 
+    @FindBy(id = "newsletter")
+    public WebElement checkBoxOne;
+
+    @FindBy(id = "optin")
+    public WebElement checkBoxTwo;
+
+    @FindBy(id = "first_name")
+    public WebElement firstName;
+
+    @FindBy(id = "last_name")
+    public WebElement lastName;
+
+    @FindBy(id = "company")
+    public WebElement company;
+
+    @FindBy(id = "address1")
+    public WebElement addressOne;
+
+    @FindBy(id = "address2")
+    public WebElement addressTwo;
+
+    @FindBy(id = "country")
+    public WebElement country;
+
+    @FindBy(id = "state")
+    public WebElement state;
+
+    @FindBy(id = "city")
+    public WebElement city;
+
+    @FindBy(id = "zipcode")
+    public WebElement zipcode;
+
+    @FindBy(id = "mobile_number")
+    public WebElement mobile_number;
+
+    @FindBy(xpath = "//button[.='Create Account']")
+    public WebElement createBtn;
+
+    @FindBy(xpath = "//b[.='Account Created!']")
+    public WebElement accountCreatedMsg;
+
+    @FindBy(xpath = "//a[.='Continue']")
+    public WebElement continueBtn;
+
+    @FindBy(xpath = "//b/..")
+    public WebElement loggedMessage;
+
+
 }
