@@ -98,5 +98,8 @@ public class BasePage {
     @FindBy(xpath = "//b/..")
     public WebElement loggedMessage;
 
+    @FindBy(xpath = "//a[.=' Delete Account']")
+    public WebElement deleteBtn;
+
 
 }

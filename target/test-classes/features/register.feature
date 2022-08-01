@@ -24,9 +24,9 @@ Feature: Register Functionality
       | MobileNumber | 05321000 |
     And user clicks on create account button
     Then verify 'ACCOUNT CREATED!' is visible
-    And user clicks on 'Continue' button
+    And user clicks on Continue button
     Then Verify that 'Logged in as username' is visible
-    And user clicks on 'Delete Account' button
+    And user clicks on Delete Account button
     Then Verify that 'ACCOUNT DELETED!' is visible and click 'Continue' button
 
 

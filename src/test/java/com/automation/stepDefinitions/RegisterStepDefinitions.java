@@ -28,6 +28,7 @@ public class RegisterStepDefinitions {
 
     Faker faker = new Faker();
 
+    String firstname;
 
     @Given("User navigate to homepage")
     public void user_navigate_to_homepage() {
@@ -55,7 +56,8 @@ public class RegisterStepDefinitions {
 
     @When("user enter username and email address")
     public void user_enter_username_and_email_address() {
-        page.name.sendKeys(faker.name().firstName());
+        firstname = faker.name().firstName();
+        page.name.sendKeys(firstname);
         page.emailAddress.sendKeys(faker.internet().emailAddress());
     }
 
@@ -134,19 +136,29 @@ public class RegisterStepDefinitions {
     }
     @Then("verify {string} is visible")
     public void verify_is_visible(String message) {
+
         System.out.println("page.accountCreatedMsg.getText() = " + page.accountCreatedMsg.getText());
         Assert.assertTrue(page.accountCreatedMsg.getText().equalsIgnoreCase(message));
 
     }
-    @Then("user clicks on {string} button")
-    public void user_clicks_on_button(String string) {
+    @Then("user clicks on Continue button")
+    public void user_clicks_on_continue_button() {
         page.continueBtn.click();
     }
+
+
     @Then("Verify that {string} is visible")
-    public void verify_that_is_visible(String username) {
+    public void verify_that_is_visible(String message) {
+        message = "Logged in as " + firstname;
         System.out.println("page.loggedMessage.getText() = " + page.loggedMessage.getText());
-        Assert.assertTrue(page.loggedMessage.getText().equalsIgnoreCase(username));
+        Assert.assertTrue(page.loggedMessage.getText().equalsIgnoreCase(message));
     }
+    @Then("user clicks on Delete Account button")
+    public void user_clicks_on_delete_account_button() {
+        page.deleteBtn.click();
+    }
+
+
     @Then("Verify that {string} is visible and click {string} button")
     public void verify_that_is_visible_and_click_button(String string, String string2) {
 
